@@ -1,6 +1,6 @@
 # Python Studies
 
-💻  - Python exercises for educational purposes.
+💻  - Python exercises for logic studies.
 
 # Buy-list
 
