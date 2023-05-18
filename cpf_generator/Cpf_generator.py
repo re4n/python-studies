@@ -1,5 +1,5 @@
 
-cpf_pessoa = '746.824.890-70'
+cpf_pessoa = input('CPF: ')
 numcpf = cpf_pessoa.replace('.', '').replace('-', '')
 
 
@@ -10,13 +10,13 @@ def calcDigito(num_cpf):
         num_int = int(numero)
         multiply_num += [num_int * (len(num_cpf) + 1 - index)]
 
-        digito = sum(multiply_num)
-        digito = (digito * 10) % 11
+    digito = sum(multiply_num)
+    digito = (digito * 10) % 11
 
-        if digito >= 9:
-            return 0
-        else:
-            return digito
+    if digito >= 9:
+        return 0
+    else:
+        return digito
 
 
 penultimo_digito = calcDigito(numcpf[:9])
